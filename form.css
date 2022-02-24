@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*Layout of the Page */
+
+.center-wrapper{
+    max-width: 600px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.form-container{
+    display: grid;
+  grid-template-columns: 1fr;
+
+}
+.gap-md{
+    padding: 20px;
+}
+
+/*Styling */
+h1{
+    font-size:3.5rem;
+    display: block;
+    text-align: center;
+
+} 
+
+.form-control{
+    border-style: none none solid none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.5rem;
+    
+}
+
+.form-control:invalid:focus{
+    border-color: red;
+
+}
+.form-control:valid:focus{
+border-color: green;
+}
+.form-container:focus-within{
+    transform: scale(1.05,1.05);
+
+}
+.form-control::placeholder{
+    color: #aaa;
+}
+.form-control:focus{
+    box-shadow: none;
+    outline: none;
+}
+.btn{
+    border-radius: 50px;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+   border: 0;
+   display: block;
+   text-align: center;
+}
+button{
+    color: white;
+}
+.btn:hover{
+    background: rgb(233,232,242);
+    background: linear-gradient(90deg, rgba(233,232,242,1) 0%, rgba(52,52,170,1) 0%, rgba(176,45,182,1) 21%, rgba(44,79,184,1) 70%, rgba(0,212,255,1) 100%);
+}
+
+textarea{
+    resize: none;
+}
+
+
+    
